@@ -11,3 +11,4 @@ Console.WriteLine(Prodotto2.GetLitri());
 Prodotto2.RiempiBottiglia(-0.4);
 Console.WriteLine(Prodotto2.GetLitri());
 Prodotto2.BeviAcqua(-1);
+Prodotto2.BeviAcqua(1);
