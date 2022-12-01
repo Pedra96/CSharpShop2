@@ -23,7 +23,8 @@ namespace CSharpShop2 {
             base.StampaProdotto();
             Console.WriteLine("consumo: "+GetConsumo()+"kWh");
             Console.WriteLine("resa della corrente: "+GetPresa());
-            Console.WriteLine("marca: "+GetMarca()); 
+            Console.WriteLine("marca: "+GetMarca());
+            Console.WriteLine("--------------------------------");
         }
     }
 
