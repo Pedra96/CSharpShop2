@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace CSharpShop2 {
-    public class Elettrodomestico : ProdottoBase {
+     class Elettrodomestico : ProdottoBase {
         private int consumo;
         private string presa;
         private string marca;
@@ -21,9 +21,9 @@ namespace CSharpShop2 {
 
         public override void StampaProdotto() {
             base.StampaProdotto();
-            Console.WriteLine("Il consumo è: "+GetConsumo()+"kWh");
-            Console.WriteLine("la presa del prodotto è: "+GetPresa());
-            Console.WriteLine("la marca è: "+GetMarca());
+            Console.WriteLine("consumo: "+GetConsumo()+"kWh");
+            Console.WriteLine("resa della corrente: "+GetPresa());
+            Console.WriteLine("marca: "+GetMarca()); 
         }
     }
 

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace CSharpShop2 {
-    public class ProdottoBase {
+    abstract class ProdottoBase {
        private string nome;
        private double prezzo;
        private double peso;
@@ -61,12 +61,14 @@ namespace CSharpShop2 {
         }
 
         public virtual void StampaProdotto() {
-            Console.WriteLine($"------------{this.GetNome()}------------");
+            Console.WriteLine($"------------{this.nome}------------");
             Console.WriteLine(GetDescrizione());
-            Console.WriteLine("il prezzo è: " + this.GetPrezzo()+"euro");
-            Console.WriteLine("l'iva del prodotto è: " + this.GetIva() + "%");
-            Console.WriteLine("il prezzo con iva è: " + this.GetPrezzoConIva()+"euro");
-            Console.WriteLine("il peso è: " + this.GetPeso() + "kg");
+            Console.WriteLine("prezzo: " + this.GetPrezzo()+"euro");
+            Console.WriteLine("iva del prodotto: " + this.GetIva() + "%");
+            Console.WriteLine("prezzo con iva: " + this.GetPrezzoConIva()+"euro");
+            Console.WriteLine("peso: " + this.GetPeso() + "g");
+            Console.WriteLine("Id: " + GetId());
+            Console.WriteLine("nome esteso: "+ this.GetId() + this.GetNome());
         }
     }
 }
